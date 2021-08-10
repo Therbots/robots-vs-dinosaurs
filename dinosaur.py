@@ -5,6 +5,11 @@
 
 
 class Dinosaur:
-    def __init__ (slef, name, attack_power):
+    def __init__ (self, name, attack_power):
+        self.name = ''
+        self.attack_power = int
+        self.health = 100
+
 
     def attack (self, robot):
+        robot.health -= self.attack_power
