@@ -68,52 +68,52 @@ class Battlefield:
                     print("You destroyed their robot!")
                 else:
                     print('Good hit! Their remaining health is ', self.fleet_1.robot_3.health)
-            elif user_atk == 2:
-                if self.herd_1.dinosaur_2.health <= 0:
-                    print('This dino is deceased! Choose another one!')
-                    self.dino_turn()                
-                user_target = int(input('Press "1" to attack Robo Infantry, "2" for Robo Calvary and "3" for Robo Heavy: '))
-                if user_target == 1:
-                    self.herd_1.dinosaur_2.attack(self.fleet_1.robot_1)
-                    if self.fleet_1.robot_1.health <= 0:
-                        print("You destroyed their robot!")
-                    else:
-                        print('Good hit! Their remaining health is ', self.fleet_1.robot_1.health)
-                elif user_target == 2:
-                    self.herd_1.dinosaur_2.attack(self.fleet_1.robot_2)
-                    if self.fleet_1.robot_2.health <= 0:
-                        print("You destroyed their robot!")
-                    else:
-                        print('Good hit! Their remaining health is ', self.fleet_1.robot_2.health)
-                elif user_target == 3:
-                    self.herd_1.dinosaur_2.attack(self.fleet_1.robot_3)
-                    if self.fleet_1.robot_3.health <= 0:
-                        print("You destroyed their robot!")
-                    else:
-                        print('Good hit! Their remaining health is ', self.fleet_1.robot_3.health)
-            elif user_atk == 3:
-                if self.herd_1.dinosaur_1.health <= 0:
-                    print('This dino is deceased! Choose another one!')
-                    self.dino_turn()
-                user_target = int(input('Press "1" to attack Robo Infantry, "2" for Robo Calvary and "3" for Robo Heavy: '))
-                if user_target == 1:
-                    self.herd_1.dinosaur_3.attack(self.fleet_1.robot_1)
-                    if self.fleet_1.robot_1.health <= 0:
-                        print("You destroyed their robot!")
-                    else:
-                        print('Good hit! Their remaining health is ', self.fleet_1.robot_1.health)
-                elif user_target == 2:
-                    self.herd_1.dinosaur_3.attack(self.fleet_1.robot_2)
-                    if self.fleet_1.robot_2.health <= 0:
-                        print("You destroyed their robot!")
-                    else:
-                        print('Good hit! Their remaining health is ', self.fleet_1.robot_2.health)
-                elif user_target == 3:
-                    self.herd_1.dinosaur_3.attack(self.fleet_1.robot_3)
-                    if self.fleet_1.robot_3.health <= 0:
-                        print("You destroyed their robot!")
-                    else:
-                        print('Good hit! Their remaining health is ', self.fleet_1.robot_3.health)
+        elif user_atk == 2:
+            if self.herd_1.dinosaur_2.health <= 0:
+                print('This dino is deceased! Choose another one!')
+                self.dino_turn()                
+            user_target = int(input('Press "1" to attack Robo Infantry, "2" for Robo Calvary and "3" for Robo Heavy: '))
+            if user_target == 1:
+                self.herd_1.dinosaur_2.attack(self.fleet_1.robot_1)
+                if self.fleet_1.robot_1.health <= 0:
+                    print("You destroyed their robot!")
+                else:
+                    print('Good hit! Their remaining health is ', self.fleet_1.robot_1.health)
+            elif user_target == 2:
+                self.herd_1.dinosaur_2.attack(self.fleet_1.robot_2)
+                if self.fleet_1.robot_2.health <= 0:
+                    print("You destroyed their robot!")
+                else:
+                    print('Good hit! Their remaining health is ', self.fleet_1.robot_2.health)
+            elif user_target == 3:
+                self.herd_1.dinosaur_2.attack(self.fleet_1.robot_3)
+                if self.fleet_1.robot_3.health <= 0:
+                    print("You destroyed their robot!")
+                else:
+                    print('Good hit! Their remaining health is ', self.fleet_1.robot_3.health)
+        elif user_atk == 3:
+            if self.herd_1.dinosaur_1.health <= 0:
+                print('This dino is deceased! Choose another one!')
+                self.dino_turn()
+            user_target = int(input('Press "1" to attack Robo Infantry, "2" for Robo Calvary and "3" for Robo Heavy: '))
+            if user_target == 1:
+                self.herd_1.dinosaur_3.attack(self.fleet_1.robot_1)
+                if self.fleet_1.robot_1.health <= 0:
+                    print("You destroyed their robot!")
+                else:
+                    print('Good hit! Their remaining health is ', self.fleet_1.robot_1.health)
+            elif user_target == 2:
+                self.herd_1.dinosaur_3.attack(self.fleet_1.robot_2)
+                if self.fleet_1.robot_2.health <= 0:
+                    print("You destroyed their robot!")
+                else:
+                    print('Good hit! Their remaining health is ', self.fleet_1.robot_2.health)
+            elif user_target == 3:
+                self.herd_1.dinosaur_3.attack(self.fleet_1.robot_3)
+                if self.fleet_1.robot_3.health <= 0:
+                    print("You destroyed their robot!")
+                else:
+                    print('Good hit! Their remaining health is ', self.fleet_1.robot_3.health)
     
         
 
@@ -142,53 +142,53 @@ class Battlefield:
                     print("You killed their Dino!")
                 else:
                     print('Good hit! Their remaining health is ', self.herd_1.dinosaur_3.health)
-            elif user_atk == 2:
-                if self.fleet_1.robot_2.health <=0:
-                    print('This robot has been destroyed! Choose another one!')
-                    self.robo_turn()
-                user_target = int(input('Press "1" to attack Velociraptor, "2" for T-Rex and "3" for Stegosaurus: '))
-                if user_target == 1:
-                    self.fleet_1.robot_1.attack(self.herd_1.dinosaur_1)
-                    print('Their health is at ', self.herd_1.dinosaur_1.health)
-                    if self.herd_1.dinosaur_1.health <= 0:
-                        print("You killed their Dino!")
-                    else:
-                        print('Good hit! Their remaining health is ', self.herd_1.dinosaur_1.health)
-                elif user_target == 2:
-                    self.fleet_1.robot_2.attack(self.herd_1.dinosaur_2)
-                    if self.herd_1.dinosaur_2.health <= 0:
-                        print("You killed their Dino!")
-                    else:
-                        print('Good hit! Their remaining health is ', self.herd_1.dinosaur_2.health)
-                elif user_target == 3:
-                    self.fleet_1.robot_3.attack(self.herd_1.dinosaur_3)
-                    if self.herd_1.dinosaur_3.health <= 0:
-                        print("You killed their Dino!")
-                    else:
-                        print('Good hit! Their remaining health is ', self.herd_1.dinosaur_3.health)
-            elif user_atk == 3:
-                if self.fleet_1.robot_3.health <=0:
-                    print('This robot has been destroyed! Choose another one!')
-                    self.robo_turn()
-                user_target = int(input('Press "1" to attack Velociraptor, "2" for T-Rex and "3" for Stegosaurus: '))
-                if user_target == 1:
-                    self.fleet_1.robot_1.attack(self.herd_1.dinosaur_1)
-                    if self.herd_1.dinosaur_1.health <= 0:
-                        print("You killed their Dino!")
-                    else:
-                        print('Good hit! Their remaining health is ', self.herd_1.dinosaur_1.health)
-                elif user_target == 2:
-                    self.fleet_1.robot_2.attack(self.herd_1.dinosaur_2)
-                    if self.herd_1.dinosaur_2.health <= 0:
-                        print("You killed their Dino!")
-                    else:
-                        print('Good hit! Their remaining health is ', self.herd_1.dinosaur_2.health)
-                elif user_target == 3:
-                    self.fleet_1.robot_3.attack(self.herd_1.dinosaur_3)
-                    if self.herd_1.dinosaur_3.health <= 0:
-                        print("You killed their Dino!")
-                    else:
-                        print('Good hit! Their remaining health is ', self.herd_1.dinosaur_3.health)
+        elif user_atk == 2:
+            if self.fleet_1.robot_2.health <=0:
+                print('This robot has been destroyed! Choose another one!')
+                self.robo_turn()
+            user_target = int(input('Press "1" to attack Velociraptor, "2" for T-Rex and "3" for Stegosaurus: '))
+            if user_target == 1:
+                self.fleet_1.robot_1.attack(self.herd_1.dinosaur_1)
+                print('Their health is at ', self.herd_1.dinosaur_1.health)
+                if self.herd_1.dinosaur_1.health <= 0:
+                    print("You killed their Dino!")
+                else:
+                    print('Good hit! Their remaining health is ', self.herd_1.dinosaur_1.health)
+            elif user_target == 2:
+                self.fleet_1.robot_2.attack(self.herd_1.dinosaur_2)
+                if self.herd_1.dinosaur_2.health <= 0:
+                    print("You killed their Dino!")
+                else:
+                    print('Good hit! Their remaining health is ', self.herd_1.dinosaur_2.health)
+            elif user_target == 3:
+                self.fleet_1.robot_3.attack(self.herd_1.dinosaur_3)
+                if self.herd_1.dinosaur_3.health <= 0:
+                    print("You killed their Dino!")
+                else:
+                    print('Good hit! Their remaining health is ', self.herd_1.dinosaur_3.health)
+        elif user_atk == 3:
+            if self.fleet_1.robot_3.health <=0:
+                print('This robot has been destroyed! Choose another one!')
+                self.robo_turn()
+            user_target = int(input('Press "1" to attack Velociraptor, "2" for T-Rex and "3" for Stegosaurus: '))
+            if user_target == 1:
+                self.fleet_1.robot_1.attack(self.herd_1.dinosaur_1)
+                if self.herd_1.dinosaur_1.health <= 0:
+                    print("You killed their Dino!")
+                else:
+                    print('Good hit! Their remaining health is ', self.herd_1.dinosaur_1.health)
+            elif user_target == 2:
+                self.fleet_1.robot_2.attack(self.herd_1.dinosaur_2)
+                if self.herd_1.dinosaur_2.health <= 0:
+                    print("You killed their Dino!")
+                else:
+                    print('Good hit! Their remaining health is ', self.herd_1.dinosaur_2.health)
+            elif user_target == 3:
+                self.fleet_1.robot_3.attack(self.herd_1.dinosaur_3)
+                if self.herd_1.dinosaur_3.health <= 0:
+                    print("You killed their Dino!")
+                else:
+                    print('Good hit! Their remaining health is ', self.herd_1.dinosaur_3.health)
  
 
     def display_winners(self):
